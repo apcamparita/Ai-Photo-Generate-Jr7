@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta AI - Generate Foto Gratis Sepuasnya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050508;
+        }
+
+        /* Animasi Nama Aplikasi Warna-Warni Berkedip */
+        @keyframes rainbowBlink {
+            0%, 100% {
+                color: #ff007f;
+                text-shadow: 0 0 20px rgba(255, 0, 127, 0.9), 0 0 2px rgba(255, 0, 127, 0.5);
+            }
+            25% {
+                color: #7f00ff;
+                text-shadow: 0 0 20px rgba(127, 0, 255, 0.9), 0 0 2px rgba(127, 0, 255, 0.5);
+            }
+            50% {
+                color: #00f0ff;
+                text-shadow: 0 0 20px rgba(0, 240, 255, 0.9), 0 0 2px rgba(0, 240, 255, 0.5);
+            }
+            75% {
+                color: #00ff66;
+                text-shadow: 0 0 20px rgba(0, 255, 102, 0.9), 0 0 2px rgba(0, 255, 102, 0.5);
+            }
+        }
+
+        .rainbow-blink-title {
+            animation: rainbowBlink 2.5s infinite;
+        }
+
+        /* Animasi kilauan pada tombol */
+        @keyframes shimmers {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .btn-shimmer {
+            background: linear-gradient(90deg, #1d4ed8, #3b82f6, #8b5cf6, #1d4ed8);
+            background-size: 200% auto;
+            animation: shimmers 4s linear infinite;
+        }
+        .btn-shimmer:hover {
+            animation: shimmers 1.5s linear infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f0f15;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #272730;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+    </style>
+</head>
+<body class="text-zinc-100 min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="border-b border-zinc-900 bg-zinc-950/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            
+            <!-- App Logo & Title (Redirects to Facebook when clicked) -->
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.open('https://www.facebook.com/DJMUSICJR7', '_blank')">
+                <div class="bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 p-2.5 rounded-2xl shadow-lg shadow-indigo-500/20 flex items-center justify-center">
+                    <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M12 2a10 10 0 0 1 7.54 16.59l-1.08-1.62A8 8 0 1 0 12 20a7.93 7.93 0 0 0 5.34-2.03l1.08 1.62A10 10 0 1 1 12 2z"/>
+                        <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="text-center sm:text-left">
+                    <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight rainbow-blink-title">
+                        META AI GENERATE FOTO GRATIS
+                    </h1>
+                    <p class="text-xs text-zinc-400 font-medium">Bebas & Gratis Tanpa Batas Sepuasnya</p>
+                </div>
+            </div>
+
+            <!-- Follow Social Media Actions -->
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <!-- Instagram Link leading to Instagram profile -->
+                <a href="https://www.instagram.com/djmusicjr7?igsh=MWoycmM1OTR5bWkwYg==" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="flex items-center gap-2 bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 hover:from-pink-500 hover:to-indigo-500 text-white font-semibold text-sm px-4 py-2 rounded-xl transition duration-300 shadow-md hover:scale-105 active:scale-95 group">
+                    <i class="fab fa-instagram text-lg group-hover:rotate-12 transition-transform duration-300"></i>
+                    <span>Instagram DJ Music Jr7</span>
+                </a>
+
+                <!-- Facebook Link when clicking DJ Music Jr7 -->
+                <a href="https://www.facebook.com/DJMUSICJR7" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm px-4 py-2 rounded-xl transition duration-300 shadow-md hover:scale-105 active:scale-95 group">
+                    <i class="fab fa-facebook text-lg group-hover:scale-110 transition-transform"></i>
+                    <span class="hover:underline">DJ Music Jr7</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 py-6 w-full flex-grow grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Left Column: Inputs and Settings (7 cols on desktop) -->
+        <section class="lg:col-span-7 flex flex-col gap-6">
+            
+            <!-- Follow Reminder Alert Box (Redirects to Facebook on main text click) -->
+            <a href="https://www.facebook.com/DJMUSICJR7" target="_blank" rel="noopener noreferrer"
+               class="block bg-gradient-to-r from-purple-950/40 via-indigo-950/30 to-blue-950/40 border border-indigo-500/30 rounded-2xl p-4 shadow-lg shadow-indigo-950/20 hover:border-indigo-500/60 transition-all duration-300 transform hover:scale-[1.01] group">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-indigo-500/20 p-2.5 rounded-xl text-indigo-400 group-hover:animate-bounce">
+                            <i class="fas fa-heart text-lg animate-pulse text-pink-500"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-zinc-100">Jangan lupa Follow <span class="text-indigo-400 font-bold group-hover:underline">DJ Music Jr7</span> ðŸ‘ˆ</p>
+                            <p class="text-xs text-zinc-400">Dukung terus kami untuk menyajikan mesin generator AI premium gratis!</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2" onclick="event.stopPropagation();">
+                        <a href="https://www.instagram.com/djmusicjr7?igsh=MWoycmM1OTR5bWkwYg==" target="_blank" class="text-zinc-400 hover:text-pink-400 p-1.5 bg-zinc-900/80 rounded-lg hover:scale-110 transition"><i class="fab fa-instagram text-lg"></i></a>
+                        <a href="https://www.facebook.com/DJMUSICJR7" target="_blank" class="text-zinc-400 hover:text-blue-400 p-1.5 bg-zinc-900/80 rounded-lg hover:scale-110 transition"><i class="fab fa-facebook text-lg"></i></a>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Settings Panel: API Key & Engine Choice -->
+            <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-3xl p-5 backdrop-blur-sm shadow-xl">
+                <button onclick="toggleSettings()" class="w-full flex items-center justify-between text-left text-sm font-bold text-zinc-300">
+                    <span class="flex items-center gap-2">
+                        <i class="fas fa-sliders text-indigo-400 animate-spin" style="animation-duration: 8s;"></i>
+                        <span>Pengaturan API Key Gemini & Mesin Gambar</span>
+                    </span>
+                    <i id="settings-chevron" class="fas fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div id="settings-panel" class="hidden mt-4 pt-4 border-t border-zinc-800/60 flex flex-col gap-4">
+                    <!-- Engine Choice -->
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-400 mb-2">Pilih Mesin Generator Gambar:</label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="cursor-pointer bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 flex flex-col gap-1 hover:border-indigo-500/40 transition">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-zinc-200">Gemini 3.1 Image</span>
+                                    <input type="radio" name="engine-select" value="gemini" checked class="accent-indigo-600">
+                                </div>
+                                <span class="text-[10px] text-zinc-500">Premium, kualitas tinggi, butuh API Key.</span>
+                            </label>
+                            <label class="cursor-pointer bg-zinc-950/80 border border-zinc-800 rounded-xl p-3 flex flex-col gap-1 hover:border-indigo-500/40 transition">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-bold text-zinc-200">Pollinations AI</span>
+                                    <input type="radio" name="engine-select" value="pollinations" class="accent-indigo-600">
+                                </div>
+                                <span class="text-[10px] text-zinc-500">Super cepat, 100% gratis, tanpa API Key.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- API Key Input -->
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-400 mb-2 flex items-center justify-between">
+                            <span>Kunci API Gemini (Gemini API Key):</span>
+                            <a href="https://aistudio.google.com/" target="_blank" class="text-indigo-400 hover:underline text-[10px] flex items-center gap-1">
+                                <i class="fas fa-key text-[8px]"></i> Dapatkan Kunci Gratis
+                            </a>
+                        </label>
+                        <div class="relative">
+                            <input type="password" id="api-key-input" placeholder="Masukkan Kunci API Gemini (AIzaSy...)" class="w-full bg-zinc-950 border border-zinc-800 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 rounded-xl py-2.5 pl-3 pr-10 text-xs text-zinc-100 focus:outline-none transition">
+                            <button onclick="toggleApiKeyVisibility()" class="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300">
+                                <i id="key-visibility-icon" class="fas fa-eye-slash text-xs"></i>
+                            </button>
+                        </div>
+                        <p class="text-[10px] text-zinc-500 mt-1">Simpan Kunci API Anda di sini untuk menggunakan model premium Gemini 3.1. Kosongkan untuk menggunakan API Key bawaan Canvas.</p>
+                    </div>
+                    <!-- Actions -->
+                    <div class="flex gap-2">
+                        <button onclick="saveSettings()" class="flex-grow bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold py-2 px-4 rounded-xl transition active:scale-95 shadow-md shadow-indigo-600/20">Simpan Pengaturan</button>
+                        <button onclick="clearApiKey()" class="bg-zinc-850 hover:bg-zinc-800 text-zinc-400 text-xs font-bold py-2 px-4 rounded-xl transition">Hapus Key</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Navigation (Workspace vs Meta Chat Assistant) -->
+            <div class="flex border-b border-zinc-800/80 bg-zinc-900/20 p-1.5 rounded-2xl border border-zinc-800/40">
+                <button onclick="switchTab('studio')" id="tab-btn-studio" class="flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 bg-indigo-600 text-white shadow-md shadow-indigo-600/10">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    <span>Studio Foto AI</span>
+                </button>
+                <button onclick="switchTab('chat')" id="tab-btn-chat" class="flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 text-zinc-400 hover:text-zinc-200">
+                    <i class="fas fa-comments"></i>
+                    <span>Obrolan Meta AI</span>
+                    <span class="bg-indigo-500/15 text-indigo-400 text-[10px] px-1.5 py-0.5 rounded-full border border-indigo-500/20 animate-pulse">GEMINI</span>
+                </button>
+            </div>
+
+            <!-- Tab Content 1: Studio Workspace -->
+            <div id="tab-studio-content" class="bg-zinc-900/40 border border-zinc-800/80 rounded-3xl p-6 backdrop-blur-sm flex flex-col gap-6 shadow-xl">
+                
+                <!-- 1. Upload Feature (At the Top) -->
+                <div>
+                    <label class="block text-sm font-bold text-zinc-300 mb-2 flex items-center justify-between">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-cloud-upload-alt text-indigo-400"></i>
+                            Upload Foto Pendukung <span class="text-xs font-normal text-zinc-500">(Opsional)</span>
+                        </span>
+                        <span class="text-xs text-indigo-400 font-semibold" id="upload-count">0 / 5 Foto</span>
+                    </label>
+                    
+                    <div id="drop-zone" class="border-2 border-dashed border-zinc-800 hover:border-indigo-500/50 bg-zinc-950/40 rounded-2xl p-6 transition duration-200 cursor-pointer flex flex-col items-center justify-center text-center group">
+                        <input type="file" id="file-input" multiple accept="image/*" class="hidden">
+                        <div class="bg-zinc-900 group-hover:bg-indigo-950/40 p-4 rounded-full text-zinc-400 group-hover:text-indigo-400 transition mb-3">
+                            <i class="fas fa-images text-2xl"></i>
+                        </div>
+                        <p class="text-sm font-medium text-zinc-300">Tarik & Lepas foto di sini atau <span class="text-indigo-400 group-hover:underline">Pilih File</span></p>
+                        <p class="text-xs text-zinc-500 mt-1">Maksimal 5 foto â€¢ Gunakan foto wajah/objek untuk referensi AI</p>
+                    </div>
+
+                    <!-- Uploaded Previews List -->
+                    <div id="preview-container" class="grid grid-cols-5 gap-3 mt-4 hidden">
+                        <!-- Preview Cards generated programmatically -->
+                    </div>
+
+                    <!-- Multimodal Gemini Analyzer Button (Shows only when photos are uploaded) -->
+                    <div id="image-analyzer-container" class="mt-3 hidden">
+                        <button onclick="analyzeImagesWithGemini()" id="analyze-images-btn" class="w-full bg-gradient-to-r from-emerald-950/30 via-teal-950/20 to-emerald-950/30 border border-emerald-500/30 hover:border-emerald-500/50 text-emerald-300 hover:text-emerald-200 text-xs font-bold px-4 py-3 rounded-xl transition duration-200 flex items-center justify-center gap-2 active:scale-95 shadow-md">
+                            <i class="fas fa-eye" id="analyze-icon"></i>
+                            <i class="fas fa-circle-notch fa-spin hidden" id="analyze-spinner"></i>
+                            <span>Analisis Estetika Foto (Gemini Multimodal)</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Analyzer Result Box -->
+                    <div id="analyzer-result-card" class="mt-3 bg-zinc-950/60 border border-emerald-500/20 rounded-2xl p-4 hidden">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1">
+                                <i class="fas fa-sparkles"></i> Hasil Analisis Gemini AI
+                            </span>
+                            <button onclick="closeAnalyzerResult()" class="text-zinc-500 hover:text-zinc-300 text-xs">Tutup</button>
+                        </div>
+                        <p id="analyzer-text" class="text-xs text-zinc-300 leading-relaxed mb-3"></p>
+                        <div id="analyzer-prompt-box" class="bg-zinc-900/80 p-2.5 rounded-lg border border-zinc-800 flex items-center justify-between gap-2">
+                            <span class="text-[11px] text-zinc-400 font-mono truncate" id="analyzer-suggested-prompt">Prompt rekomendasi...</span>
+                            <button onclick="applyAnalyzedPrompt()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1.5 rounded-md transition flex items-center gap-1 shrink-0">
+                                <i class="fas fa-copy"></i> Gunakan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Prompt Input Field (Placed below Upload feature) -->
+                <div class="relative">
+                    <label class="block text-sm font-bold text-zinc-300 mb-2 flex items-center justify-between">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-wand-magic-sparkles text-purple-400"></i>
+                            Perintah Foto (Prompt)
+                        </span>
+                        <span class="bg-indigo-500/10 text-indigo-400 text-[10px] font-bold px-1.5 py-0.5 rounded border border-indigo-500/20">Bebas</span>
+                    </label>
+                    <textarea id="prompt-input" rows="4" 
+                        class="w-full bg-zinc-950/80 border border-zinc-850 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 rounded-2xl p-4 text-zinc-100 placeholder-zinc-500 text-sm focus:outline-none transition-all duration-200 resize-none"
+                        placeholder="Tuliskan detail foto yang ingin dibuat... Contoh: 'Seorang DJ tampan sedang bermain musik di panggung megah berlampu neon bertuliskan DJ Music Jr7, gaya futuristik 3D render'"></textarea>
+                    
+                    <!-- Gemini Smart Prompt Helpers -->
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <button onclick="enhancePromptWithGemini()" id="enhance-prompt-btn" class="flex-1 bg-gradient-to-r from-indigo-950/50 to-purple-950/50 hover:from-indigo-900/60 hover:to-purple-900/60 border border-indigo-500/20 text-indigo-300 hover:text-indigo-200 text-xs font-bold px-3 py-2.5 rounded-xl transition duration-200 flex items-center justify-center gap-2 active:scale-95 shadow">
+                            <i class="fas fa-magic" id="enhance-icon"></i>
+                            <i class="fas fa-circle-notch fa-spin hidden" id="enhance-spinner"></i>
+                            <span>Sempurnakan Prompt (Gemini AI)</span>
+                        </button>
+                        <button onclick="translatePromptWithGemini()" id="translate-prompt-btn" class="flex-1 bg-zinc-900/80 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-zinc-100 text-xs font-bold px-3 py-2.5 rounded-xl transition duration-200 flex items-center justify-center gap-2 active:scale-95 shadow">
+                            <i class="fas fa-language" id="translate-icon"></i>
+                            <i class="fas fa-circle-notch fa-spin hidden" id="translate-spinner"></i>
+                            <span>Terjemah ke Inggris (Gemini)</span>
+                        </button>
+                    </div>
+
+                    <!-- Quick Prompt Suggestions (Redirects user prompts easily) -->
+                    <div class="flex flex-wrap gap-2 mt-3 pt-3 border-t border-zinc-800/60">
+                        <button onclick="applySuggestion('Foto DJ bermain musik di festival masa depan berlampu neon warna-warni cyberpunk')" class="text-xs bg-zinc-800/40 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 px-3 py-1.5 rounded-lg transition">ðŸŽ§ DJ Festival</button>
+                        <button onclick="applySuggestion('Pemandangan alam pegunungan dengan danau jernih memantulkan cahaya matahari terbenam')" class="text-xs bg-zinc-800/40 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 px-3 py-1.5 rounded-lg transition">â›°ï¸ Sunset Pegunungan</button>
+                        <button onclick="applySuggestion('Kucing imut astronot memakai helm luar angkasa sedang mengambang di galaksi')" class="text-xs bg-zinc-800/40 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 px-3 py-1.5 rounded-lg transition">ðŸ± Kucing Astronot</button>
+                    </div>
+                </div>
+
+                <!-- 3. Aspect Ratio Selector (Interactive Dropdown with Horizontal Layout) -->
+                <div class="border-t border-zinc-800/80 pt-4">
+                    <div class="flex flex-col gap-3">
+                        <!-- Main Selector Button -->
+                        <button id="ratio-toggle-btn" 
+                                class="w-full bg-zinc-950/80 hover:bg-zinc-900 border border-zinc-850 hover:border-indigo-500/40 text-zinc-300 font-semibold px-4 py-3 rounded-xl flex items-center justify-between transition-all duration-200 active:scale-[0.99]"
+                                onclick="toggleRatioSelector()">
+                            <span class="flex items-center gap-2">
+                                <i class="fas fa-crop text-indigo-400"></i>
+                                <span>Pilih Rasio Foto</span>
+                                <span id="current-ratio-label" class="bg-indigo-500/10 text-indigo-400 text-xs px-2.5 py-0.5 rounded-md ml-2 border border-indigo-500/20">1:1 (Square)</span>
+                            </span>
+                            <i id="ratio-chevron" class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+
+                        <!-- Expanding Panel for Horizontal Alignment choices (Sejajar) -->
+                        <div id="ratio-options-panel" class="hidden overflow-hidden transition-all duration-300 bg-zinc-950/40 p-3 rounded-2xl border border-zinc-850">
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                                <!-- Ratio: 1:1 -->
+                                <button type="button" onclick="selectRatio('1:1', this)" 
+                                    class="ratio-btn border-2 border-indigo-600 bg-indigo-500/10 text-white rounded-xl p-3 flex flex-col items-center justify-center gap-2 transition duration-200 hover:bg-zinc-800">
+                                    <div class="w-6 h-6 border-2 border-current rounded opacity-80 flex items-center justify-center text-[10px] font-bold">1:1</div>
+                                    <span class="text-xs font-semibold">Square (1:1)</span>
+                                </button>
+                                <!-- Ratio: 9:16 -->
+                                <button type="button" onclick="selectRatio('9:16', this)" 
+                                    class="ratio-btn border-2 border-zinc-800 bg-transparent text-zinc-400 rounded-xl p-3 flex flex-col items-center justify-center gap-2 transition duration-200 hover:bg-zinc-800">
+                                    <div class="w-4 h-6 border-2 border-current rounded opacity-80 flex items-center justify-center text-[10px] font-bold">9:16</div>
+                                    <span class="text-xs font-semibold">Story (9:16)</span>
+                                </button>
+                                <!-- Ratio: 16:9 -->
+                                <button type="button" onclick="selectRatio('16:9', this)" 
+                                    class="ratio-btn border-2 border-zinc-800 bg-transparent text-zinc-400 rounded-xl p-3 flex flex-col items-center justify-center gap-2 transition duration-200 hover:bg-zinc-800">
+                                    <div class="w-6 h-4 border-2 border-current rounded opacity-80 flex items-center justify-center text-[9px] font-bold">16:9</div>
+                                    <span class="text-xs font-semibold">Cinema (16:9)</span>
+                                </button>
+                                <!-- Ratio: 4:3 -->
+                                <button type="button" onclick="selectRatio('4:3', this)" 
+                                    class="ratio-btn border-2 border-zinc-800 bg-transparent text-zinc-400 rounded-xl p-3 flex flex-col items-center justify-center gap-2 transition duration-200 hover:bg-zinc-800">
+                                    <div class="w-6 h-5 border-2 border-current rounded opacity-80 flex items-center justify-center text-[10px] font-bold">4:3</div>
+                                    <span class="text-xs font-semibold">Standard (4:3)</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generate Action Button -->
+                <button id="generate-btn" onclick="generateImage()"
+                    class="w-full btn-shimmer text-white font-bold py-4 px-6 rounded-2xl flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-indigo-500/25">
+                    <i class="fas fa-circle-notch fa-spin hidden" id="spinner"></i>
+                    <i class="fas fa-play" id="btn-icon"></i>
+                    <span id="btn-text">MULAI GENERATE FOTO GRATIS</span>
+                </button>
+            </div>
+
+            <!-- Tab Content 2: Meta AI Chat Assistant -->
+            <div id="tab-chat-content" class="bg-zinc-900/40 border border-zinc-800/80 rounded-3xl p-6 backdrop-blur-sm flex flex-col gap-4 shadow-xl hidden">
+                <div class="flex items-center gap-3 border-b border-zinc-800/65 pb-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center text-white text-md shadow">
+                        <i class="fas fa-robot animate-pulse"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-zinc-200 flex items-center gap-1.5">
+                            Asisten Kreatif Meta AI
+                            <span class="bg-indigo-500/10 text-indigo-400 text-[9px] px-1.5 py-0.5 rounded border border-indigo-500/20 font-bold">GEMINI 3.1</span>
+                        </h3>
+                        <p class="text-xs text-zinc-500">Tanyakan konsep visual, gaya seni, atau perbaiki prompt Anda.</p>
+                    </div>
+                </div>
+
+                <!-- Chat Conversation Container -->
+                <div id="chat-conversation" class="h-[280px] overflow-y-auto space-y-3 pr-1">
+                    <!-- Prepopulated greeting chat messages will be loaded by javascript -->
+                </div>
+
+                <!-- Chat Suggestions Chips -->
+                <div class="flex flex-wrap gap-1.5 pt-2 border-t border-zinc-800/40">
+                    <button type="button" onclick="quickChatSuggest('Berikan saya 3 ide konsep foto DJ futuristik yang sangat keren!')" class="text-[11px] bg-zinc-950/60 hover:bg-zinc-900 text-zinc-400 hover:text-zinc-200 px-2.5 py-1.5 rounded-lg transition border border-zinc-850">ðŸŽµ Ide Foto DJ</button>
+                    <button type="button" onclick="quickChatSuggest('Rancang prompt bergaya anime cyberpunk dengan warna ungu & biru neon')" class="text-[11px] bg-zinc-950/60 hover:bg-zinc-900 text-zinc-400 hover:text-zinc-200 px-2.5 py-1.5 rounded-lg transition border border-zinc-850">ðŸ‘¾ Anime Cyberpunk</button>
+                    <button type="button" onclick="quickChatSuggest('Tuliskan prompt 3D realistis naga mengelilingi kastil kuno di atas awan')" class="text-[11px] bg-zinc-950/60 hover:bg-zinc-900 text-zinc-400 hover:text-zinc-200 px-2.5 py-1.5 rounded-lg transition border border-zinc-850">ðŸ‰ Kastil Fantasi</button>
+                </div>
+
+                <!-- Chat Input Form -->
+                <form onsubmit="sendChatMessage(event)" class="flex gap-2">
+                    <input type="text" id="chat-input" placeholder="Tanyakan ide visual atau diskusikan prompt Anda..." class="flex-grow bg-zinc-950 border border-zinc-850 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 rounded-2xl px-4 py-3.5 text-zinc-100 text-xs sm:text-sm focus:outline-none placeholder-zinc-500">
+                    <button type="submit" id="chat-send-btn" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 rounded-2xl flex items-center justify-center transition active:scale-95 shadow-md shadow-indigo-600/20 shrink-0">
+                        <i class="fas fa-paper-plane text-sm" id="chat-send-icon"></i>
+                        <i class="fas fa-circle-notch fa-spin hidden" id="chat-send-spinner"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Right Column: Interactive Output Display (5 cols on desktop) -->
+        <section class="lg:col-span-5 flex flex-col gap-6">
+            
+            <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-3xl p-6 backdrop-blur-sm flex flex-col gap-5 shadow-xl h-full justify-between">
+                
+                <div>
+                    <h2 class="text-md font-bold text-zinc-300 mb-4 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Hasil Foto AI
+                    </h2>
+
+                    <!-- Main Image Preview Area -->
+                    <div id="output-wrapper" class="relative w-full aspect-square bg-zinc-950 border border-zinc-850 rounded-2xl overflow-hidden flex items-center justify-center group shadow-inner">
+                        
+                        <!-- Initial State Placeholder -->
+                        <div id="placeholder-view" class="text-center p-6 flex flex-col items-center gap-3">
+                            <div class="w-16 h-16 bg-zinc-900 rounded-2xl flex items-center justify-center text-indigo-400 border border-zinc-800">
+                                <i class="fas fa-palette text-2xl"></i>
+                            </div>
+                            <h3 class="text-zinc-300 font-bold text-sm">Belum Ada Foto</h3>
+                            <p class="text-xs text-zinc-500 max-w-xs">Tuliskan perintah Anda di kolom kiri, lalu klik tombol "Generate" untuk melahirkan karya seni menakjubkan gratis tanpa batas.</p>
+                        </div>
+
+                        <!-- Loading State View -->
+                        <div id="loading-view" class="hidden absolute inset-0 bg-zinc-950/95 backdrop-blur-sm flex flex-col items-center justify-center text-center p-6 z-10">
+                            <div class="relative w-20 h-20 mb-4">
+                                <div class="absolute inset-0 rounded-full border-4 border-indigo-500/20"></div>
+                                <div class="absolute inset-0 rounded-full border-4 border-t-indigo-500 animate-spin"></div>
+                                <div class="absolute inset-2 rounded-full border-4 border-purple-500/10"></div>
+                                <div class="absolute inset-2 rounded-full border-4 border-b-purple-500 animate-spin" style="animation-direction: reverse; animation-duration: 1.5s;"></div>
+                            </div>
+                            <h4 class="text-sm font-semibold text-zinc-200" id="loading-title">Menghubungkan ke Meta AI Engine...</h4>
+                            <p id="loading-step" class="text-xs text-zinc-400 mt-1 max-w-[240px]">Melukis piksel foto sesuai permintaan Anda</p>
+                        </div>
+
+                        <!-- Main Loaded Image with Programmatic Event Preloaders to avoid browser iframe sandbox blocks -->
+                        <img id="output-image" 
+                             class="hidden w-full h-full object-contain" 
+                             alt="Keluaran Foto AI Meta">
+
+                        <!-- Action Overlay Panel (Appears on Hover) -->
+                        <div id="action-overlay" class="hidden absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md border border-zinc-800 p-3 rounded-xl flex items-center justify-between transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 shadow-xl">
+                            <span class="text-[11px] text-zinc-400 font-medium truncate max-w-[150px]" id="overlay-prompt">Prompt info...</span>
+                            <div class="flex gap-2">
+                                <button onclick="downloadImage()" class="bg-indigo-600 hover:bg-indigo-500 text-white p-2 rounded-lg text-xs font-semibold flex items-center gap-1 transition shadow" title="Unduh Foto">
+                                    <i class="fas fa-download"></i>
+                                    <span>Download</span>
+                                </button>
+                                <button onclick="copyImageURL()" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-300 p-2 rounded-lg text-xs flex items-center gap-1 transition shadow" title="Salin Link">
+                                    <i class="fas fa-link"></i>
+                                    <span>Salin</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Session Gallery History -->
+                <div class="border-t border-zinc-800/80 pt-4 mt-4">
+                    <h3 class="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2 flex items-center justify-between">
+                        <span>Histori Sesi Ini</span>
+                        <span id="gallery-count" class="text-[10px] bg-zinc-800 text-zinc-400 px-1.5 py-0.5 rounded">0 Foto</span>
+                    </h3>
+                    <div id="gallery-grid" class="grid grid-cols-4 gap-2 min-h-[60px] bg-zinc-950/40 p-2 rounded-xl border border-zinc-800/60 items-center justify-center">
+                        <p id="gallery-empty" class="col-span-4 text-center text-[11px] text-zinc-500 py-4">Foto yang berhasil dibuat akan tersimpan di sini sementara.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Interactive Custom Toast Notification Box -->
+    <div id="toast-box" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-zinc-900 border border-zinc-800 text-zinc-200 px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 max-w-sm pointer-events-none">
+        <div id="toast-icon" class="text-emerald-400 flex items-center justify-center bg-emerald-500/10 p-2 rounded-lg">
+            <i class="fas fa-check-circle text-lg"></i>
+        </div>
+        <div>
+            <p id="toast-message" class="text-xs font-medium"></p>
+        </div>
+    </div>
+
+    <!-- Footer Area (All DJ Music Jr7 branding elements lead to FB page) -->
+    <footer class="border-t border-zinc-900 bg-zinc-950 py-4 text-center text-xs text-zinc-500 mt-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p>&copy; 2026 Meta AI - Rekonstruksi Premium. Hak Cipta dilindungi.</p>
+            <div class="flex items-center gap-2">
+                <span>Didesain khusus untuk</span>
+                <a href="https://www.facebook.com/DJMUSICJR7" target="_blank" rel="noopener" class="text-indigo-400 hover:underline font-bold">DJ Music Jr7</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        const uploadedImages = []; // Stores upload base64 states
+        let selectedRatio = "1:1"; // Current aspect ratio selection
+        let isRatioOpen = false; // Status collapsible ratio
+        let isSettingsOpen = false; // Status collapsible settings panel
+        const galleryItems = []; // Session history tracker
+        let lastAddedUrl = ""; // To avoid redundant pushes on history reload
+
+        // DOM elements
+        const fileInput = document.getElementById('file-input');
+        const dropZone = document.getElementById('drop-zone');
+        const previewContainer = document.getElementById('preview-container');
+        const uploadCountEl = document.getElementById('upload-count');
+        const ratioOptionsPanel = document.getElementById('ratio-options-panel');
+        const ratioChevron = document.getElementById('ratio-chevron');
+        const currentRatioLabel = document.getElementById('current-ratio-label');
+        const promptInput = document.getElementById('prompt-input');
+        const apiKeyInput = document.getElementById('api-key-input');
+        const settingsPanel = document.getElementById('settings-panel');
+        const settingsChevron = document.getElementById('settings-chevron');
+
+        // Initialize Configurations on Load
+        window.onload = function() {
+            // Load Saved API Key
+            const savedKey = localStorage.getItem('gemini_api_key');
+            if (savedKey) {
+                apiKeyInput.value = savedKey;
+            }
+
+            // Load Saved Engine Preference
+            const savedEngine = localStorage.getItem('selected_engine') || 'gemini';
+            const radioEl = document.querySelector(`input[name="engine-select"][value="${savedEngine}"]`);
+            if (radioEl) {
+                radioEl.checked = true;
+            }
+
+            renderChatMessages();
+        };
+
+        // Settings Toggle Logic
+        function toggleSettings() {
+            isSettingsOpen = !isSettingsOpen;
+            if (isSettingsOpen) {
+                settingsPanel.classList.remove('hidden');
+                settingsChevron.classList.add('rotate-180');
+            } else {
+                settingsPanel.classList.add('hidden');
+                settingsChevron.classList.remove('rotate-180');
+            }
+        }
+
+        // Save Settings to Storage
+        function saveSettings() {
+            const keyVal = apiKeyInput.value.trim();
+            const engineVal = document.querySelector('input[name="engine-select"]:checked').value;
+
+            localStorage.setItem('gemini_api_key', keyVal);
+            localStorage.setItem('selected_engine', engineVal);
+
+            showToast("Konfigurasi API Key & Mesin berhasil disimpan!", "success");
+            toggleSettings();
+        }
+
+        // Clear API Key
+        function clearApiKey() {
+            apiKeyInput.value = "";
+            localStorage.removeItem('gemini_api_key');
+            showToast("Kunci API telah dihapus dari browser.", "info");
+        }
+
+        // Toggle Password Mask/Unmask
+        function toggleApiKeyVisibility() {
+            const icon = document.getElementById('key-visibility-icon');
+            if (apiKeyInput.type === "password") {
+                apiKeyInput.type = "text";
+                icon.className = "fas fa-eye text-xs";
+            } else {
+                apiKeyInput.type = "password";
+                icon.className = "fas fa-eye-slash text-xs";
+            }
+        }
+
+        // Setup File Upload Interactions
+        dropZone.addEventListener('click', () => fileInput.click());
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('border-indigo-500', 'bg-indigo-950/20');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('border-indigo-500', 'bg-indigo-950/20');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('border-indigo-500', 'bg-indigo-950/20');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        function handleFiles(files) {
+            if (!files.length) return;
+
+            const remainingSlots = 5 - uploadedImages.length;
+            if (remainingSlots <= 0) {
+                showToast("Batas maksimal 5 foto telah tercapai!", "error");
+                return;
+            }
+
+            const filesToProcess = Array.from(files).slice(0, remainingSlots);
+            if (files.length > remainingSlots) {
+                showToast(`Hanya ${remainingSlots} foto tambahan yang dapat diupload.`, "warning");
+            }
+
+            let loadedCount = 0;
+            filesToProcess.forEach(file => {
+                if (!file.type.startsWith('image/')) {
+                    showToast("Harap upload file bertipe gambar saja!", "error");
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const base64Data = event.target.result;
+                    uploadedImages.push({
+                        id: Date.now() + Math.random().toString(36).substr(2, 5),
+                        name: file.name,
+                        data: base64Data
+                    });
+
+                    loadedCount++;
+                    if (loadedCount === filesToProcess.length) {
+                        updatePreviews();
+                    }
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function updatePreviews() {
+            previewContainer.innerHTML = '';
+            
+            if (uploadedImages.length > 0) {
+                previewContainer.classList.remove('hidden');
+                document.getElementById('image-analyzer-container').classList.remove('hidden');
+            } else {
+                previewContainer.classList.add('hidden');
+                document.getElementById('image-analyzer-container').classList.add('hidden');
+                closeAnalyzerResult();
+            }
+
+            uploadedImages.forEach((img, index) => {
+                const card = document.createElement('div');
+                card.className = 'relative aspect-square rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 group';
+                card.innerHTML = `
+                    <img src="${img.data}" class="w-full h-full object-cover">
+                    <button onclick="removeUploadedImage('${img.id}')" class="absolute -top-1 -right-1 bg-red-600 hover:bg-red-500 text-white w-5 h-5 rounded-full flex items-center justify-center text-[10px] shadow-md transition transform scale-90 hover:scale-110">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="absolute bottom-0 inset-x-0 bg-black/60 text-[8px] text-center py-0.5 truncate px-1 text-zinc-300">
+                        Foto ${index + 1}
+                    </div>
+                `;
+                previewContainer.appendChild(card);
+            });
+
+            uploadCountEl.textContent = `${uploadedImages.length} / 5 Foto`;
+        }
+
+        function removeUploadedImage(id) {
+            const idx = uploadedImages.findIndex(img => img.id === id);
+            if (idx !== -1) {
+                uploadedImages.splice(idx, 1);
+                updatePreviews();
+                showToast("Foto berhasil dihapus.", "success");
+            }
+        }
+
+        // Apply quick suggestion prompt
+        function applySuggestion(text) {
+            promptInput.value = text;
+            showToast("Saran prompt telah diterapkan!", "info");
+        }
+
+        function toggleRatioSelector() {
+            isRatioOpen = !isRatioOpen;
+            if (isRatioOpen) {
+                ratioOptionsPanel.classList.remove('hidden');
+                ratioChevron.classList.add('rotate-180');
+            } else {
+                ratioOptionsPanel.classList.add('hidden');
+                ratioChevron.classList.remove('rotate-180');
+            }
+        }
+
+        function selectRatio(ratio, element) {
+            selectedRatio = ratio;
+            
+            let ratioText = "1:1 (Square)";
+            if (ratio === "9:16") ratioText = "9:16 (Story)";
+            if (ratio === "16:9") ratioText = "16:9 (Cinema)";
+            if (ratio === "4:3") ratioText = "4:3 (Standard)";
+            
+            currentRatioLabel.textContent = ratioText;
+
+            // Reset borders
+            document.querySelectorAll('.ratio-btn').forEach(btn => {
+                btn.classList.remove('border-indigo-600', 'bg-indigo-500/10', 'text-white');
+                btn.classList.add('border-zinc-800', 'bg-transparent', 'text-zinc-400');
+            });
+
+            // Set active
+            element.classList.remove('border-zinc-800', 'bg-transparent', 'text-zinc-400');
+            element.classList.add('border-indigo-600', 'bg-indigo-500/10', 'text-white');
+
+            showToast(`Rasio aspek diubah ke ${ratioText}`, "success");
+        }
+
+        /* 
+           Gemini API Calling Core Implementation.
+           Utilizes native system API token in runtime if empty, or saved key if provided.
+        */
+        async function callGeminiAPI(payload, endpointModel = "gemini-3-flash-preview") {
+            const userKey = localStorage.getItem('gemini_api_key');
+            const apiKey = userKey ? userKey.trim() : "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${endpointModel}:generateContent?key=${apiKey}`;
+            
+            let attempt = 0;
+            const maxRetries = 3;
+            let delay = 1000;
+
+            while (attempt < maxRetries) {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`Gemini Server Error Code: ${response.status}`);
+                    }
+                    
+                    const result = await response.json();
+                    return result;
+                } catch (error) {
+                    attempt++;
+                    if (attempt >= maxRetries) {
+                        throw error;
+                    }
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    delay *= 2; // Exponential Backoff Delayer
+                }
+            }
+        }
+
+        // Gemini Prompt Enhancer logic
+        async function enhancePromptWithGemini() {
+            const currentPrompt = promptInput.value.trim();
+            if (!currentPrompt) {
+                showToast("Harap ketik ide dasar prompt terlebih dahulu!", "warning");
+                promptInput.focus();
+                return;
+            }
+
+            setBtnLoadingState('enhance', true);
+
+            const payload = {
+                contents: [{ parts: [{ text: `Tolong sempurnakan deskripsi gambar ini agar menjadi prompt bahasa Inggris yang sangat detail, kaya estetika, sinematik, dengan pencahayaan dramatis, realistis 8k, yang sangat cocok untuk generator gambar AI. Teks asli pengguna: "${currentPrompt}"` }] }],
+                systemInstruction: {
+                    parts: [{ text: "Anda adalah pakar pembuat prompt (Prompt Engineering) profesional untuk generator gambar. Tugas Anda adalah mengubah prompt sederhana pengguna menjadi satu prompt bahasa Inggris yang luar biasa, beresolusi tinggi, kaya detail artistik, sinematik, dan siap saji. Kembalikan HANYA teks prompt hasil akhir bahasa Inggris tersebut, tanpa penjelasan apa pun, tanpa tanda kutip pembuka/penutup." }]
+                }
+            };
+
+            try {
+                const response = await callGeminiAPI(payload);
+                const generatedPrompt = response.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (generatedPrompt) {
+                    promptInput.value = generatedPrompt.trim();
+                    showToast("Prompt berhasil disempurnakan dengan Gemini AI!", "success");
+                } else {
+                    showToast("Gagal memperoleh respon dari Gemini.", "error");
+                }
+            } catch (error) {
+                console.error("Gemini Enhancer error:", error);
+                showToast("Gagal memanggil asisten Gemini. Silakan coba sesaat lagi.", "error");
+            } finally {
+                setBtnLoadingState('enhance', false);
+            }
+        }
+
+        // Gemini Prompt Translator logic
+        async function translatePromptWithGemini() {
+            const currentPrompt = promptInput.value.trim();
+            if (!currentPrompt) {
+                showToast("Ketik prompt bahasa Indonesia terlebih dahulu!", "warning");
+                promptInput.focus();
+                return;
+            }
+
+            setBtnLoadingState('translate', true);
+
+            const payload = {
+                contents: [{ parts: [{ text: `Terjemahkan teks prompt gambar ini ke dalam Bahasa Inggris yang dioptimalkan untuk generator AI: "${currentPrompt}"` }] }],
+                systemInstruction: {
+                    parts: [{ text: "Anda adalah penerjemah asisten AI khusus generator gambar. Terjemahkan teks dari pengguna ke dalam Bahasa Inggris yang natural, akurat, dan sangat mudah dipahami oleh mesin penghasil gambar. Berikan HANYA teks bahasa Inggris hasil terjemahan murni tanpa kutipan atau teks tambahan." }]
+                }
+            };
+
+            try {
+                const response = await callGeminiAPI(payload);
+                const translated = response.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (translated) {
+                    promptInput.value = translated.trim();
+                    showToast("Berhasil diterjemahkan ke bahasa Inggris!", "success");
+                } else {
+                    showToast("Gagal memperoleh respon dari Gemini.", "error");
+                }
+            } catch (error) {
+                console.error("Gemini Translation error:", error);
+                showToast("Penerjemahan gagal. Silakan coba kembali.", "error");
+            } finally {
+                setBtnLoadingState('translate', false);
+            }
+        }
+
+        // Gemini Multimodal Image Style Analyzer logic
+        async function analyzeImagesWithGemini() {
+            if (uploadedImages.length === 0) {
+                showToast("Unggah minimal 1 foto pendukung terlebih dahulu!", "warning");
+                return;
+            }
+
+            setBtnLoadingState('analyze', true);
+            const promptText = "Analisis gaya visual, pencahayaan, dominasi warna, dan subjek utama dari foto pendukung yang saya unggah ini. Jelaskan secara singkat estetikanya dalam Bahasa Indonesia yang ramah (maksimal 3 kalimat), lalu sarankan 1 prompt bahasa Inggris lengkap yang ideal untuk mereplikasi atau memodifikasi gaya ini.";
+
+            const parts = [];
+            // Parse uploaded images into inlineData format for Gemini Multimodal
+            uploadedImages.forEach(img => {
+                const matches = img.data.match(/^data:([^;]+);base64,(.+)$/);
+                if (matches) {
+                    parts.push({
+                        inlineData: {
+                            mimeType: matches[1],
+                            data: matches[2]
+                        }
+                    });
+                }
+            });
+            
+            // Append the analysis command text
+            parts.push({ text: promptText });
+
+            const payload = {
+                contents: [{ parts: parts }],
+                systemInstruction: {
+                    parts: [{ text: "Anda adalah analis gaya seni foto AI profesional. Analisis foto yang diunggah pengguna, deskripsikan gaya seninya secara artistik dalam bahasa Indonesia yang ringkas, lalu berikan 1 rekomendasi prompt bahasa Inggris terbaik di akhir yang dipisahkan dengan tanda baris baru." }]
+                },
+                generationConfig: {
+                    responseMimeType: "application/json",
+                    responseSchema: {
+                        type: "OBJECT",
+                        properties: {
+                            deskripsi_estetika: { type: "STRING", description: "Analisis singkat gaya visual, pencahayaan, subjek, dan estetika foto dalam Bahasa Indonesia." },
+                            rekomendasi_prompt_en: { type: "STRING", description: "Prompt bahasa Inggris lengkap dan terperinci untuk membuat ulang gaya visual ini." }
+                        },
+                        required: ["deskripsi_estetika", "rekomendasi_prompt_en"]
+                    }
+                }
+            };
+
+            try {
+                const response = await callGeminiAPI(payload, "gemini-3-flash-preview");
+                const jsonText = response.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (jsonText) {
+                    const parsedData = JSON.parse(jsonText);
+                    
+                    document.getElementById('analyzer-text').textContent = parsedData.deskripsi_estetika;
+                    document.getElementById('analyzer-suggested-prompt').textContent = parsedData.rekomendasi_prompt_en;
+                    
+                    // Show result panel
+                    document.getElementById('analyzer-result-card').classList.remove('hidden');
+                    showToast("Analisis gaya foto selesai!", "success");
+                } else {
+                    showToast("Gagal menganalisis gambar.", "error");
+                }
+            } catch (error) {
+                console.error("Gemini Multimodal error:", error);
+                showToast("Analisis gagal. Pastikan format file gambar Anda valid.", "error");
+            } finally {
+                setBtnLoadingState('analyze', false);
+            }
+        }
+
+        function applyAnalyzedPrompt() {
+            const promptVal = document.getElementById('analyzer-suggested-prompt').textContent;
+            if (promptVal && promptVal !== "Prompt rekomendasi...") {
+                promptInput.value = promptVal;
+                showToast("Prompt rekomendasi Gemini berhasil diterapkan ke studio!", "success");
+            }
+        }
+
+        function closeAnalyzerResult() {
+            document.getElementById('analyzer-result-card').classList.add('hidden');
+        }
+
+        // Helper to control buttons loading spinner states
+        function setBtnLoadingState(type, isLoading) {
+            const spinner = document.getElementById(`${type}-spinner`);
+            const icon = document.getElementById(`${type}-icon`);
+            const btn = document.getElementById(`${type}-prompt-btn`) || document.getElementById(`${type}-images-btn`);
+
+            if (isLoading) {
+                spinner.classList.remove('hidden');
+                icon.classList.add('hidden');
+                btn.disabled = true;
+                btn.classList.add('opacity-75', 'cursor-not-allowed');
+            } else {
+                spinner.classList.add('hidden');
+                icon.classList.remove('hidden');
+                btn.disabled = false;
+                btn.classList.remove('opacity-75', 'cursor-not-allowed');
+            }
+        }
+
+        // Tab switching logic
+        function switchTab(target) {
+            const tabStudio = document.getElementById('tab-studio-content');
+            const tabChat = document.getElementById('tab-chat-content');
+            
+            const btnStudio = document.getElementById('tab-btn-studio');
+            const btnChat = document.getElementById('tab-btn-chat');
+
+            if (target === 'studio') {
+                tabStudio.classList.remove('hidden');
+                tabChat.classList.add('hidden');
+                
+                btnStudio.className = "flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 bg-indigo-600 text-white shadow-md shadow-indigo-600/10";
+                btnChat.className = "flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 text-zinc-400 hover:text-zinc-200";
+            } else {
+                tabStudio.classList.add('hidden');
+                tabChat.classList.remove('hidden');
+
+                btnStudio.className = "flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 text-zinc-400 hover:text-zinc-200";
+                btnChat.className = "flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 flex items-center justify-center gap-2 bg-indigo-600 text-white shadow-md shadow-indigo-600/10";
+                
+                // Trigger chat init if first time
+                if (chatMessagesHistory.length <= 1) {
+                    renderChatMessages();
+                }
+            }
+        }
+
+        // Meta AI Chatbot Companion Logic
+        const chatMessagesHistory = [
+            {
+                role: "user",
+                parts: [{ text: "Halo Meta AI! Bisakah Anda membantu saya merancang ide foto spektakuler hari ini?" }]
+            },
+            {
+                role: "model",
+                parts: [{ text: "Halo! Saya **Meta AI**, asisten kreatif khusus Anda di platform Meta AI Generate Foto Gratis milik **DJ Music Jr7**. ðŸŽ§âœ¨\n\nSaya siap membantu Anda memikirkan konsep gambar yang menakjubkan, merapikan prompt, atau menerjemahkannya ke dalam bahasa Inggris yang dioptimalkan untuk generator AI. \n\n*Yuk, jelaskan konsep foto impian Anda atau pilih tombol saran di bawah! Jangan lupa dukung kami dengan memfollow Facebook & Instagram DJ Music Jr7 ya!*" }]
+            }
+        ];
+
+        function renderChatMessages() {
+            const container = document.getElementById('chat-conversation');
+            container.innerHTML = '';
+
+            chatMessagesHistory.forEach((msg, idx) => {
+                // Ignore the first dummy user greeting for clean starting layout
+                if (idx === 0) return;
+
+                const isModel = msg.role === "model";
+                const wrapper = document.createElement('div');
+                wrapper.className = `flex ${isModel ? 'justify-start' : 'justify-end'} w-full animate-fadeIn`;
+
+                // Handle text with very basic markdown support (newlines & bold)
+                let textContent = msg.parts[0].text;
+                let formattedText = textContent
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                    .replace(/\n/g, '<br>');
+
+                // Extract any suggested prompt patterns to add quick "Use Prompt" action
+                let usePromptBtn = '';
+                if (isModel && idx > 1) {
+                    // Try to match English prompt block or single lines that look like prompt
+                    const promptMatches = textContent.match(/(?:prompt:|Prompt:)\s*["']?([^"'\n]+)["']?/i) || textContent.match(/`([^`]+)`/);
+                    if (promptMatches && promptMatches[1]) {
+                        const targetPrompt = promptMatches[1].replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                        usePromptBtn = `
+                            <button onclick="usePromptFromChat('${targetPrompt}')" class="mt-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-[11px] font-bold px-3 py-2 rounded-xl transition flex items-center gap-1 shadow-sm w-fit active:scale-95">
+                                <i class="fas fa-wand-magic-sparkles text-[9px]"></i>
+                                <span>âœ¨ Gunakan Prompt Ini</span>
+                            </button>
+                        `;
+                    }
+                }
+
+                wrapper.innerHTML = `
+                    <div class="max-w-[85%] rounded-2xl p-3.5 ${isModel ? 'bg-zinc-900 border border-zinc-800 text-zinc-100 rounded-tl-none' : 'bg-indigo-600 text-white rounded-tr-none'} shadow text-xs sm:text-sm">
+                        <div class="leading-relaxed font-normal">${formattedText}</div>
+                        ${usePromptBtn}
+                    </div>
+                `;
+                container.appendChild(wrapper);
+            });
+
+            // Scroll container to bottom
+            container.scrollTop = container.scrollHeight;
+        }
+
+        async function sendChatMessage(e) {
+            if (e) e.preventDefault();
+            
+            const input = document.getElementById('chat-input');
+            const userMsgText = input.value.trim();
+            if (!userMsgText) return;
+
+            // Display message locally
+            chatMessagesHistory.push({
+                role: "user",
+                parts: [{ text: userMsgText }]
+            });
+            renderChatMessages();
+            input.value = '';
+
+            // Put typing state
+            setChatLoading(true);
+
+            const payload = {
+                contents: chatMessagesHistory,
+                systemInstruction: {
+                    parts: [{ text: "Anda adalah Meta AI, asisten kreatif visual tercanggih yang cerdas dan bersahabat, yang diintegrasikan khusus untuk platform 'Meta AI Generate Foto Gratis' yang dibangun untuk mengapresiasi DJ Music Jr7. Tugas utama Anda adalah membantu pengguna merancang prompt gambar yang memukau. Berikan saran prompt AI dalam format Bahasa Inggris di dalam tanda kutip atau kode block agar mudah disalin. Selalu selipkan pujian yang ramah tentang DJ Music Jr7 di sela obrolan, bersikap hangat, ekspresif menggunakan emoji musik, DJ, dan kilau, dan gunakan Bahasa Indonesia." }]
+                }
+            };
+
+            try {
+                const response = await callGeminiAPI(payload, "gemini-3-flash-preview");
+                const aiResponse = response.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (aiResponse) {
+                    chatMessagesHistory.push({
+                        role: "model",
+                        parts: [{ text: aiResponse }]
+                    });
+                } else {
+                    chatMessagesHistory.push({
+                        role: "model",
+                        parts: [{ text: "Maaf, server Meta AI sedang memproses data terlalu padat. Silakan kirimkan kembali obrolan Anda." }]
+                    });
+                }
+                renderChatMessages();
+            } catch (error) {
+                console.error("Gemini Chat error:", error);
+                chatMessagesHistory.push({
+                    role: "model",
+                    parts: [{ text: "Koneksi terputus. Silakan periksa kembali sambungan internet Anda dan coba lagi." }]
+                });
+                renderChatMessages();
+            } finally {
+                setChatLoading(false);
+            }
+        }
+
+        function quickChatSuggest(text) {
+            document.getElementById('chat-input').value = text;
+            sendChatMessage();
+        }
+
+        function usePromptFromChat(promptText) {
+            promptInput.value = promptText;
+            switchTab('studio');
+            showToast("Prompt berhasil dipindahkan ke Generator!", "success");
+        }
+
+        function setChatLoading(isLoading) {
+            const sendIcon = document.getElementById('chat-send-icon');
+            const sendSpinner = document.getElementById('chat-send-spinner');
+            const sendBtn = document.getElementById('chat-send-btn');
+
+            if (isLoading) {
+                sendSpinner.classList.remove('hidden');
+                sendIcon.classList.add('hidden');
+                sendBtn.disabled = true;
+            } else {
+                sendSpinner.classList.add('hidden');
+                sendIcon.classList.remove('hidden');
+                sendBtn.disabled = false;
+            }
+        }
+
+        /* 
+           Construct a fast, CORS-safe free image generator URL.
+           Runs entirely inside client space safely.
+        */
+        function generateWithPollinations(prompt, ratio) {
+            let width = 1024;
+            let height = 1024;
+            if (ratio === "9:16") {
+                width = 576;
+                height = 1024;
+            } else if (ratio === "16:9") {
+                width = 1024;
+                height = 576;
+            } else if (ratio === "4:3") {
+                width = 1024;
+                height = 768;
+            }
+
+            const seed = Math.floor(Math.random() * 10000000);
+            
+            // Auto enhance prompt for stunning, photorealistic results
+            let enhancedPrompt = `${prompt}, highly photorealistic, hyper-detailed render, meta ai engine, premium cinematic lighting, 8k resolution`;
+            
+            // If there are uploaded images, we append descriptive markers to influence the AI creation
+            if (uploadedImages.length > 0) {
+                enhancedPrompt += `, styled with reference uploaded photo characteristics`;
+            }
+            
+            const cleanPrompt = encodeURIComponent(enhancedPrompt);
+            return `https://image.pollinations.ai/prompt/${cleanPrompt}?width=${width}&height=${height}&seed=${seed}&nologo=true&enhance=true`;
+        }
+
+        // Create Payload for Gemini 3.1 Flash Image Engine
+        function buildGeminiImagePayload(promptText) {
+            const parts = [{ text: promptText + ", highly detailed, cinematic style, hyper-realistic, 8k resolution" }];
+
+            // Include image data if references exist (Image-to-Image / Style replication)
+            uploadedImages.forEach(img => {
+                const matches = img.data.match(/^data:([^;]+);base64,(.+)$/);
+                if (matches) {
+                    parts.push({
+                        inlineData: {
+                            mimeType: matches[1],
+                            data: matches[2]
+                        }
+                    });
+                }
+            });
+
+            return {
+                contents: [{
+                    role: "user",
+                    parts: parts
+                }],
+                generationConfig: {
+                    responseModalities: ['IMAGE'],
+                    imageConfig: {
+                        aspectRatio: selectedRatio
+                    }
+                }
+            };
+        }
+
+        function setGeneratedImage(imageUrl, promptText) {
+            const outputImg = document.getElementById('output-image');
+            
+            // Simpan metadata untuk penanganan download/salin
+            outputImg.dataset.activePrompt = promptText;
+            outputImg.classList.add('hidden');
+            
+            // Buat objek gambar di memori (preloader) guna menghindari pemblokiran onload sandbox iframe
+            const imgPreloader = new Image();
+            
+            imgPreloader.onload = function() {
+                outputImg.src = imageUrl;
+                onImageLoaded();
+            };
+            
+            imgPreloader.onerror = function() {
+                console.warn("Primary image load failed. Retrying with fallback...");
+                // Recovery option
+                const fallbackUrl = generateWithPollinations(promptText, selectedRatio);
+                const imgRetry = new Image();
+                
+                imgRetry.onload = function() {
+                    outputImg.src = fallbackUrl;
+                    onImageLoaded();
+                };
+                
+                imgRetry.onerror = function() {
+                    onImageError();
+                };
+                
+                imgRetry.src = fallbackUrl;
+            };
+            
+            imgPreloader.src = imageUrl;
+        }
+
+        // Native Image Loaded Callback
+        function onImageLoaded() {
+            const outputImg = document.getElementById('output-image');
+            const promptText = outputImg.dataset.activePrompt || "";
+            
+            setLoading(false);
+            outputImg.classList.remove('hidden');
+            document.getElementById('placeholder-view').classList.add('hidden');
+            
+            // Show custom controls overlay
+            document.getElementById('overlay-prompt').textContent = promptText;
+            const actionOverlay = document.getElementById('action-overlay');
+            actionOverlay.classList.remove('hidden');
+            actionOverlay.style.opacity = '1';
+            actionOverlay.style.transform = 'translateY(0)';
+
+            // Avoid adding duplication when clicking same image from history
+            if (outputImg.src !== lastAddedUrl) {
+                addToHistory(outputImg.src, promptText);
+                lastAddedUrl = outputImg.src;
+            }
+        }
+
+        // Native Image Error Callback
+        function onImageError() {
+            setLoading(false);
+            showToast("Gagal memperoleh struktur gambar dari server AI. Silakan coba kembali.", "error");
+            document.getElementById('placeholder-view').classList.remove('hidden');
+            document.getElementById('output-image').classList.add('hidden');
+        }
+
+        async function generateImage() {
+            const promptText = promptInput.value.trim();
+            const activeEngine = document.querySelector('input[name="engine-select"]:checked').value;
+            
+            if (!promptText) {
+                showToast("Harap masukkan perintah prompt terlebih dahulu!", "warning");
+                promptInput.focus();
+                return;
+            }
+
+            // Put UI in active processing/loading state
+            setLoading(true);
+
+            // Progressive visual updates
+            const steps = [
+                "Menghubungkan ke Meta AI Engine...",
+                "Mempersiapkan parameter aspek rasio...",
+                "Menganalisis objek/foto referensi...",
+                "Merapikan piksel warna resolusi tinggi...",
+                "Menyelesaikan formasi gambar..."
+            ];
+            
+            let currentStepIdx = 0;
+            const stepInterval = setInterval(() => {
+                if (currentStepIdx < steps.length) {
+                    document.getElementById('loading-step').textContent = steps[currentStepIdx];
+                    currentStepIdx++;
+                }
+            }, 1000);
+
+            try {
+                if (activeEngine === 'gemini') {
+                    document.getElementById('loading-title').textContent = "Melukis dengan Gemini 3.1 Image...";
+                    const payload = buildGeminiImagePayload(promptText);
+                    
+                    try {
+                        // Call Premium Gemini 3.1 Image Generation
+                        const result = await callGeminiAPI(payload, "gemini-3.1-flash-image-preview");
+                        const imagePart = result?.candidates?.[0]?.content?.parts?.find(p => p.inlineData);
+                        
+                        if (imagePart && imagePart.inlineData) {
+                            const b64Data = imagePart.inlineData.data;
+                            const mimeType = imagePart.inlineData.mimeType;
+                            const finalUrl = `data:${mimeType};base64,${b64Data}`;
+                            setGeneratedImage(finalUrl, promptText);
+                        } else {
+                            throw new Error("Struktur respon Gemini 3.1 tidak memiliki data gambar inline.");
+                        }
+                    } catch (geminiError) {
+                        console.warn("Gemini Engine gagal / Key dibatasi. Otomatis beralih ke Pollinations...", geminiError);
+                        showToast("Kunci API sibuk/tidak valid. Menggunakan mesin alternatif gratis...", "warning");
+                        const finalImageUrl = generateWithPollinations(promptText, selectedRatio);
+                        setGeneratedImage(finalImageUrl, promptText);
+                    }
+                } else {
+                    document.getElementById('loading-title').textContent = "Melukis dengan Pollinations AI...";
+                    const finalImageUrl = generateWithPollinations(promptText, selectedRatio);
+                    setGeneratedImage(finalImageUrl, promptText);
+                }
+            } catch (error) {
+                console.error("Critical: Fallback error:", error);
+                setLoading(false);
+                showToast("Gagal memproses gambar pada server.", "error");
+            } finally {
+                clearInterval(stepInterval);
+            }
+        }
+
+        function addToHistory(url, prompt) {
+            const emptyTxt = document.getElementById('gallery-empty');
+            if (emptyTxt) emptyTxt.remove();
+
+            const galleryGrid = document.getElementById('gallery-grid');
+            
+            galleryItems.push({ url, prompt });
+            document.getElementById('gallery-count').textContent = `${galleryItems.length} Foto`;
+
+            const item = document.createElement('div');
+            item.className = 'relative aspect-square rounded-lg overflow-hidden border border-zinc-800 cursor-pointer hover:border-indigo-500 transition shadow group';
+            item.onclick = () => loadFromHistory(url, prompt);
+            item.innerHTML = `
+                <img src="${url}" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                    <i class="fas fa-eye text-white text-xs"></i>
+                </div>
+            `;
+
+            galleryGrid.insertBefore(item, galleryGrid.firstChild);
+        }
+
+        function loadFromHistory(url, prompt) {
+            const outputImg = document.getElementById('output-image');
+            
+            // Set source (let onload handle visualization states smoothly)
+            setLoading(true);
+            outputImg.dataset.activePrompt = prompt;
+            outputImg.src = url;
+
+            promptInput.value = prompt;
+            showToast("Memuat foto dari histori sesi.", "success");
+        }
+
+        function setLoading(isLoading) {
+            const spinner = document.getElementById('spinner');
+            const btnIcon = document.getElementById('btn-icon');
+            const btnText = document.getElementById('btn-text');
+            const loadingView = document.getElementById('loading-view');
+            const generateBtn = document.getElementById('generate-btn');
+            const placeholderView = document.getElementById('placeholder-view');
+            const outputImg = document.getElementById('output-image');
+            const actionOverlay = document.getElementById('action-overlay');
+
+            if (isLoading) {
+                spinner.classList.remove('hidden');
+                btnIcon.classList.add('hidden');
+                btnText.textContent = "SEDANG MEMPROSES FOTO...";
+                
+                loadingView.classList.remove('hidden');
+                placeholderView.classList.add('hidden');
+                outputImg.classList.add('hidden');
+                actionOverlay.classList.add('hidden');
+                actionOverlay.style.opacity = '0';
+                
+                generateBtn.disabled = true;
+                generateBtn.classList.add('opacity-80', 'cursor-not-allowed');
+            } else {
+                spinner.classList.add('hidden');
+                btnIcon.classList.remove('hidden');
+                btnText.textContent = "MULAI GENERATE FOTO GRATIS";
+                
+                loadingView.classList.add('hidden');
+                generateBtn.disabled = false;
+                generateBtn.classList.remove('opacity-80', 'cursor-not-allowed');
+            }
+        }
+
+        // Elegant CORS-Safe Download Fallback
+        async function downloadImage() {
+            const img = document.getElementById('output-image');
+            if (!img.src || img.src.includes('placeholder')) {
+                showToast("Belum ada foto yang siap diunduh!", "error");
+                return;
+            }
+
+            showToast("Menyiapkan unduhan...", "info");
+
+            try {
+                // Try fetching inside the download click. If sandbox blocks, execute safe fallback.
+                const response = await fetch(img.src);
+                const blob = await response.blob();
+                const blobUrl = URL.createObjectURL(blob);
+                
+                const link = document.createElement('a');
+                link.href = blobUrl;
+                link.download = `MetaAI_DJMusicJr7_${Date.now()}.png`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(blobUrl);
+                
+                showToast("Foto berhasil diunduh!", "success");
+            } catch (e) {
+                console.warn("Direct download sandbox restrictions, using tab opening option:", e);
+                const newWindow = window.open(img.src, '_blank');
+                if (newWindow) {
+                    showToast("Tahan / klik kanan pada gambar baru lalu pilih 'Simpan Gambar'!", "success");
+                } else {
+                    showToast("Harap izinkan popup browser untuk mengunduh foto otomatis.", "warning");
+                }
+            }
+        }
+
+        function copyImageURL() {
+            const img = document.getElementById('output-image');
+            if (!img.src || img.src.includes('placeholder')) {
+                showToast("Belum ada foto yang siap disalin!", "error");
+                return;
+            }
+
+            const tempInput = document.createElement('input');
+            tempInput.value = img.src;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showToast("Tautan foto berhasil disalin ke clipboard!", "success");
+        }
+
+        function showToast(message, type = "success") {
+            const toast = document.getElementById('toast-box');
+            const toastIcon = document.getElementById('toast-icon');
+            const toastMsg = document.getElementById('toast-message');
+
+            toastMsg.textContent = message;
+            toastIcon.className = "flex items-center justify-center p-2 rounded-lg ";
+            
+            if (type === "success") {
+                toastIcon.classList.add("bg-emerald-500/10", "text-emerald-400");
+                toastIcon.innerHTML = `<i class="fas fa-check-circle text-lg"></i>`;
+            } else if (type === "warning") {
+                toastIcon.classList.add("bg-amber-500/10", "text-amber-400");
+                toastIcon.innerHTML = `<i class="fas fa-exclamation-triangle text-lg"></i>`;
+            } else if (type === "error") {
+                toastIcon.classList.add("bg-red-500/10", "text-red-400");
+                toastIcon.innerHTML = `<i class="fas fa-times-circle text-lg"></i>`;
+            } else {
+                toastIcon.classList.add("bg-indigo-500/10", "text-indigo-400");
+                toastIcon.innerHTML = `<i class="fas fa-info-circle text-lg"></i>`;
+            }
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
